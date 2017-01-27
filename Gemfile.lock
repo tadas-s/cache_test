@@ -63,6 +63,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     parser (2.3.3.1)
       ast (~> 2.2)
+    pg (0.18.4)
     powerpack (0.1.1)
     puma (3.6.2)
     rack (2.0.1)
@@ -139,6 +140,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  pg
   puma (~> 3.0)
   rails (~> 5.0.1)
   rspec-rails
