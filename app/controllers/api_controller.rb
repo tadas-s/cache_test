@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 # nodoc
 class ApiController < ApplicationController
-  def foo
-    expires_in 1.hour, public: true
+  def api
+    expires_in 24.hour, public: true
 
     srand params[:seed].to_i
 
+    # will generate random json responses from 50 to 4000 bytes
     length = rand(100)
     response = { seed: params[:seed].to_i }
 

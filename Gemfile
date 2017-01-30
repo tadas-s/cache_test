@@ -24,6 +24,11 @@ gem 'puma', '~> 3.0'
 # gem 'rack-cors'
 
 gem 'distribution'
+gem 'faraday'
+gem 'faraday-http-cache'
+gem 'dalli'
+gem 'connection_pool'
+gem 'redis-rails'
 
 group :production do
   gem 'pg'
@@ -34,6 +39,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
   gem 'rubocop'
+  gem 'pry'
 end
 
 group :development do
